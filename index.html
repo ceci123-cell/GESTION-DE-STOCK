@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenu">
+    <h1>Gestion de stock</h1>
+    <h2>Ajouter un produit</h2>
+    <form id="formProduit">
+        <label>Nom du produit</label>
+        <input type="text" id="nom" placeholder="Ordinateur">
+        <label>Catégorie</label>
+        <input type="text" id="categorie" placeholder="Informatique">
+        <label>Prix</label>
+        <input type="Number" id="prix" placeholder="3000000 FCFA">
+        <label>Quantité de stock</label>
+        <input type="Number" id="quantite" placeholder="5">
+        <button type="submit" id="btnAjouter">Ajouter un produit</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Numéro</th>
+              <th>Nom du produit</th>
+                <th>Catégorie</th>
+                  <th>Prix</th>
+                    <th>Quantité</th>
+                      <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableauProduits"></tbody>
+    </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
